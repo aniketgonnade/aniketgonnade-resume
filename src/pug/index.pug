@@ -14,7 +14,9 @@ html(lang='en')
 
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css")
         // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+        //script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous')
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css")
+
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
@@ -46,7 +48,9 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#interests') Interests
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#awards') Awards
+                        a.nav-link.js-scroll-trigger(href='#awards') Certifications
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
 
         // Page Content
         .container-fluid.p-0
@@ -63,13 +67,13 @@ html(lang='en')
                     p.lead.mb-5
                         | I am a DevOps Engineer with a passion for automating processes and improving system reliability. I have experience in cloud computing, containerization, and continuous integration/continuous deployment (CI/CD) practices. My goal is to bridge the gap between development and operations to deliver high-quality software efficiently.
                     .social-icons
-                        a.social-icon(href='https://www.linkedin.com/in/aniketgonnade/', target='_blank')
+                        a.social-icon(href='https://www.linkedin.com/in/aniketgonnade/', target="_blank", style="text-decoration: none;")
                             i.fab.fa-linkedin-in
-                        a.social-icon(href='https://github.com/aniketgonnade', target='_blank')
+                        a.social-icon(href='https://github.com/aniketgonnade', target="_blank", style="text-decoration: none;")
                             i.fab.fa-github
-                        a.social-icon(href='')
-                            i.fab.fa-twitter
-                        a.social-icon(href='#!')
+                        a.social-icon(href='', target="_blank", style="text-decoration: none;")
+                            i.fab.fa-x-twitter
+                        a.social-icon(href='#!', target="_blank", style="text-decoration: none;")
                             i.fab.fa-facebook-f
                         a.social-icon(href='https://github.com/user-attachments/files/20455832/Aniket-Gonnade-Resume.pdf', target='_blank')
                             i.fas.fa-file   
@@ -142,7 +146,7 @@ html(lang='en')
                     .d-flex.flex-column.flex-md-row.justify-content-between
                         .flex-grow-1
                             h3.mb-0 Bachelor of Engineering
-                            .subheading.mb-3 Marathwada Mitra Mandal's College of Engineering
+                            .subheading.mb-3 Marathwada Mitra Mandal's College of Engineering, Pune 
                             div - Information Technology
                             //- p GPA: 3.56
                         .flex-shrink-0
@@ -208,24 +212,56 @@ html(lang='en')
                             i.fab.fa-ubuntu
                         li.list-inline-item
                             i.fab.fa-windows
-                    .subheading.mb-3 Workflow
-                    ul.fa-ul.mb-0
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Mobile-First, Responsive Design
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Browser Testing & Debugging
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Cross Functional Teams
-                        li
-                            span.fa-li
-                                i.fas.fa-check
-                            | Agile Development & Scrum
+                    //- .subheading.mb-3 Workflow
+                    //- ul.fa-ul.mb-0
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Mobile-First, Responsive Design
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Browser Testing & Debugging
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Cross Functional Teams
+                    //-     li
+                    //-         span.fa-li
+                    //-             i.fas.fa-check
+                    //-         | Agile Development & Scrum
+
+                .subheading.mb-3 Workflow
+                ul.fa-ul.mb-0
+                    li
+                        span.fa-li
+                            i.fas.fa-check
+                        | Infrastructure as Code (IaC) with Terraform & CloudFormation
+                    li
+                        span.fa-li
+                            i.fas.fa-check
+                        | CI/CD Pipelines using Jenkins & GitHub Actions
+                    li
+                        span.fa-li
+                            i.fas.fa-check
+                        | Containerization with Docker and Kubernetes Orchestration
+                    li
+                        span.fa-li
+                            i.fas.fa-check
+                        | Monitoring & Logging using CloudWatch, ELK Stack, Grafana
+                    li
+                        span.fa-li
+                            i.fas.fa-check
+                        | Cloud Services: AWS (EC2, S3, RDS, IAM, Lambda)
+                    li
+                        span.fa-li
+                            i.fas.fa-check
+                        | Version Control with Git, GitHub & GitLab
+                    li
+                        span.fa-li
+                            i.fas.fa-check
+                        | Agile Development & Scrum-based Cloud Projects
+
 
             hr.m-0
                 
@@ -234,55 +270,238 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Interests
                     p
-                        | Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.
-                    p.mb-0
-                        | When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.
-
+                        | Outside of work, I like keeping a healthy mix of fun and learning. I really enjoy traveling and exploring new places—it helps me reset and brings fresh perspectives. I’m also into hiking and playing sports whenever I get the chance, especially when I need a break from screens.
+                    p
+                        | When I’m indoors, you’ll usually find me listening to music (mostly EDM and pop), relaxing with some games, or diving into the latest tech trends. I’m always curious about how things work in the world of cloud and DevOps, so I spend a good chunk of time experimenting with tools, learning new concepts, and building small projects to sharpen my skills.
+                    p
+                        | Staying active, both mentally and physically, keeps me motivated and helps me grow continuously—personally and professionally.
             hr.m-0
 
             // Awards
             section#awards.resume-section
                 .resume-section-content
-                    h2.mb-5 Awards & Certifications
+                    h2.mb-5 Certifications
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Google Analytics Certified Developer
+                                i.fas.fa-check
+                            | AWS DevOps Training – Cluematrix Technologies
+
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | Mobile Web Specialist - Google Certification
+                                i.fas.fa-check
+                            | Google – Introduction to Git and GitHub 
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                                i.fas.fa-check
+                            | Java Programming Masterclass – Udemy 
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                                i.fas.fa-check
+                            | Infosys Springboard - AWS Certified Developer - Associate Certification
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 2
-                            sup nd 
-                            | Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                                i.fas.fa-check
+                            | Spoken Tutorial Certifications – C
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 1
-                            sup st 
-                            | Place - James Buchanan High School - Hackathon 2006
+                                i.fas.fa-check
+                            | Spoken Tutorial Certifications – Advanced C++
                         li
                             span.fa-li
-                                i.fas.fa-trophy.text-warning
-                            | 3
-                            sup rd 
-                            | Place - James Buchanan High School - Hackathon 2005
+                                i.fas.fa-check
+                            | Spoken Tutorial Certifications – RDBMS PostgreSQL
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Spoken Tutorial Certifications – PHP & MySQL
+            hr.m-0
+
+            // Projects
+            section#projects.resume-section
+                .resume-section-content
+                    h2.mb-5 Projects
+                    
+                    h3.mb-0
+                        a(href='#001') AWS-Powered E-commerce Website Deployment
+                    h3.mb-0
+                        a(href='#002') Automated CI/CD Pipeline Deployment 
+                    h3.mb-0
+                        a(href='#003') EasyPark – Smart Parking Management System
+                    h3.mb-0
+                        a(href='#004') Smart Healthcare Assistant
+            
+            
+            hr.m-0
+
+            // 001
+            section#001.resume-section
+                
+                .subheading.mb-3 AWS-Powered E-commerce Website Deployment
+
+                    p
+                    strong Role:
+                    |  DevOps Engineer
+
+                    p
+                    strong Objective:
+                    |  Automate and deploy an e-commerce platform on AWS.
+
+                    p
+                    strong Responsibilities:
+
+                    ul.fa-ul.mb-3
+                    li
+                        span.fa-li
+                        | Deployed an application using AWS EC2, S3, RDS, Route 53, and CloudFront.
+                    li
+                        span.fa-li
+                        | Developed a CI/CD pipeline with Jenkins and GitHub Actions for automated updates.
+                    li
+                        span.fa-li
+                        | Used Docker & Kubernetes to containerize the application, ensuring high availability.
+                    li
+                        span.fa-li
+                        | Configured CloudWatch for real-time monitoring and centralized logging with ELK Stack.
+
+                    p
+                    strong Environment:
+                    |  Windows, Linux
+
+                    p
+                    strong Worked Tools/Technologies:
+                    |  AWS (EC2, S3, RDS, Route 53, CloudFront), Docker, Kubernetes, Jenkins, GitHub Actions, CloudWatch, ELK Stack
+                    p
+                    | --> 
+                    a(href='#projects', style='text-decoration: underline; color: inherit') Projects
+
+
+             
+            hr.m-0
+
+        // Automated CI/CD Pipeline Deployment
+        section#002.resume-section
+            
+            .subheading.mb-3 Automated CI/CD Pipeline Deployment
+
+                p
+                    strong Role:
+                    |  DevOps Engineer
+
+                p
+                    strong Objective:
+                    |  Design and implement an automated CI/CD pipeline for containerized application deployment.
+
+                p
+                    strong Responsibilities:
+
+                ul.fa-ul.mb-3
+                    li
+                        span.fa-li
+                        | Developed a Jenkins-based CI/CD pipeline to automate code integration, Docker image builds, and deployments on AWS EC2.
+                    li
+                        span.fa-li
+                        | Dockerized a backend application and integrated GitHub and Docker Hub for version-controlled deployments.
+                    li
+                        span.fa-li
+                        | Automated container deployment using a custom shell script.
+                    li
+                        span.fa-li
+                        | Resolved issues related to Git branching, Docker permissions, and execution rights to ensure smooth delivery.
+
+                p
+                    strong Environment:
+                    |  Ubuntu (AWS EC2)
+
+                p
+                    strong Worked Tools/Technologies:
+                    |  Jenkins, Docker, GitHub, Docker Hub, Shell Script, AWS EC2
+                p
+                    | --> 
+                    a(href='#projects', style='text-decoration: underline; color: inherit') Projects
+
+
+
+            hr.m-0
+
+        section#003.resume-section
+            
+            .subheading.mb-3 EasyPark – Smart Parking Management System
+
+                p
+                    strong Role:
+                    |  Full Stack Developer
+
+                p
+                    strong Objective:
+                    |  Develop an online system for real-time parking spot reservation and management.
+
+                p
+                    strong Responsibilities:
+
+                ul.fa-ul.mb-3
+                    li
+                        span.fa-li
+                        | Designed and developed a Spring Boot backend with a ReactJS frontend for seamless user experience.
+                    li
+                        span.fa-li
+                        | Integrated MySQL for data storage and retrieval of parking slots, reservations, and transactions.
+                    li
+                        span.fa-li
+                        | Implemented a role-based access system for admins, parking lot owners, and users.
+
+                p
+                    strong Environment:
+                    |  Windows
+
+                p
+                    strong Worked Tools/Technologies:
+                    |  Java, Spring Boot, ReactJS, MySQL, HTML, CSS, JavaScript
+                p
+                    | --> 
+                    a(href='#projects', style='text-decoration: underline; color: inherit') Projects
+
+
+            hr.m-0
+        section#004.resume-section
+            
+            .subheading.mb-3 Smart Healthcare Assistant
+
+                p
+                    strong Role:
+                    |  Software Developer
+
+                p
+                    strong Objective:
+                    |  Implement a digital healthcare assistant to manage patient records, track medical history, and provide health insights.
+
+                p
+                    strong Responsibilities:
+
+                ul.fa-ul.mb-3
+                    li
+                        span.fa-li
+                        | Developed a Java Spring Boot backend with a MySQL database for storing medical data securely.
+                    li
+                        span.fa-li
+                        | Built an interactive web interface using HTML, CSS, and JavaScript for easy access to patient records.
+                    li
+                        span.fa-li
+                        | Implemented automated reminders for prescription schedules and diet plans.
+
+                p
+                    strong Environment:
+                    |  Windows
+
+                p
+                    strong Worked Tools/Technologies:
+                    |  Java, Spring Boot, MySQL, HTML, CSS, JavaScript
+                p
+                    | --> 
+                    a(href='#projects', style='text-decoration: underline; color: inherit') Projects
+
+            hr.m-0
+            
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
